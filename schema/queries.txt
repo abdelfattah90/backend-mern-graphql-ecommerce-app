@@ -1,0 +1,39 @@
+// Add Category
+mutation {
+    addCategory(name: "Category 2", ) {
+      id
+      name
+  
+    }
+  }
+
+// Delete Category
+  mutation  {
+    deleteCategory(id: "63dbc4be4aa46509de8a3054") {
+      id
+ 
+    }
+   }
+
+// Get Categories
+  {
+    categories {
+      name
+    }
+  }
+
+
+// Add Item
+  mutation {
+    addItem(name: "Item 1", categoryId: "63db068cf5748a12fe39b8a6") {
+  name
+    }
+  }
+
+// Get Items
+  {
+    items {
+      name
+      
+    }
+  }
