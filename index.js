@@ -20,4 +20,4 @@ app.use('/', route)
 // DATABASE
 connectDB()
 
-app.listen(process.env.PORT || 5000, () => console.log('App Running...'))
+app.listen(process.env.PORT || 8000, () => console.log('App Running...'))
