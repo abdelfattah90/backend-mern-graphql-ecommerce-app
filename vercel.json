@@ -1,0 +1,1 @@
+{ "buildCommand": "next build", "version": 2, "rewrites": [{ "source": "/(.*)", "destination": "/" }] }
