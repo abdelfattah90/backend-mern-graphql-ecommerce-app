@@ -25,4 +25,13 @@ router.post('/doctor', async (req, res) => {
   }
 })
 
+router.get('/doctor', async (req, res) => {
+  try {
+    const doctors = await Doctor.find()
+    res.status(200).json(doctors)
+  } catch (error) {
+    res.status(500).json({ message: 'Server Error', error: error.message })
+  }
+})
+
 export default router
